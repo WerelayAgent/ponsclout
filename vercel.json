@@ -3,7 +3,7 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/((?!api/|assets/|brand/).*)$",
+      "source": "/((?!api/|assets/|brand/|images/).*)$",
       "destination": "/index.html"
     }
   ]
