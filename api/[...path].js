@@ -1,13 +1,12 @@
 export default async function handler(req, res) {
   try {
-    // req.url includes /api/, so we strip it to forward to api.cloutfun.xyz
-    const targetUrl = 'https://api.cloutfun.xyz' + req.url.replace(/^\/api/, '');
+    const targetUrl = 'https://www.cloutfun.xyz' + req.url;
     
     const options = {
       method: req.method,
       headers: {
-        'User-Agent': req.headers['user-agent'] || 'Mozilla/5.0',
-        'Accept': 'application/json',
+        'User-Agent': req.headers['user-agent'] || 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+        'Accept': 'application/json'
       }
     };
 
